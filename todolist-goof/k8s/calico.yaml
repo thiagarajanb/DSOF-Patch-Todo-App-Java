@@ -4106,7 +4106,7 @@ spec:
             - mountPath: /host/opt/cni/bin
               name: cni-bin-dir
           securityContext:
-            privileged: true
+            privileged: false
         # This container installs the CNI binaries
         # and CNI network config file on each node.
         - name: install-cni
